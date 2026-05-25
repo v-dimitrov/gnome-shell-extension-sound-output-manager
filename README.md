@@ -9,4 +9,8 @@ Gnome Shell Extension that lets you rename or hide sound output devices in the Q
 ## Install
 This extension is available on [GNOME Extensions Website](https://extensions.gnome.org/extension/10047/sound-output-manager/).
 
-
+## Uninstall
+To bring back original sound device names you can do any of these:
+- Delete the custom names from extension settings (automatically brings back the original names)
+- Disable the extension (removes all customizations)
+- Uninstall the extension (removes all customizations)
