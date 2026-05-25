@@ -1,0 +1,9 @@
+{
+    "name": "Sound Output Manager",
+    "description": "Rename or hide sound output devices in the Quick Settings menu",
+    "settings-schema": "org.gnome.shell.extensions.sound-output-manager",
+    "shell-version": ["45", "46", "47", "48", "49", "50"],
+    "url": "https://github.com/v-dimitrov/gnome-shell-extension-sound-output-manager",
+    "uuid": "sound-output-manager@sound-output-manager",
+    "license": "GPL-3.0-or-later"
+}
