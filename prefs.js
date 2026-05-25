@@ -57,7 +57,7 @@ export default class SoundOutputManagerPreferences extends ExtensionPreferences 
 
         if (devices.length < 1) {
             group.add(new Adw.ActionRow({
-                title:    'No sound output devices found',
+                title: 'No sound output devices found',
                 subtitle: 'Make sure PipeWire / PulseAudio is running',
             }));
             return;
@@ -103,7 +103,7 @@ export default class SoundOutputManagerPreferences extends ExtensionPreferences 
     }
 
     _buildRows(group, devices, settings) {
-        const hiddenSinks  = settings.get_strv('hidden-sinks');
+        const hiddenSinks = settings.get_strv('hidden-sinks');
         const renamedSinks = settings.get_value('renamed-sinks').deepUnpack();
 
         for (const {key, displayName, subtitle} of devices) {
@@ -135,7 +135,7 @@ export default class SoundOutputManagerPreferences extends ExtensionPreferences 
             // allow assigning a custom name to the device
             const entryRow = new Adw.EntryRow({
                 title: 'Custom display name',
-                text:  renamedSinks[key] ?? '',
+                text: renamedSinks[key] ?? '',
             });
             entryRow.connect('changed', () => {
                 const current = settings.get_value('renamed-sinks').deepUnpack();
