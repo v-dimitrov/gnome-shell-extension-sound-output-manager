@@ -32,8 +32,6 @@ export default class SoundOutputManagerExtension extends Extension {
         this._originalLabels = new Map(); // device id -> original label
         this._settingsChangedId = null;
         this._initId = null;
-
-        // Defer so the async QuickSettings._setupIndicators() has time to finish.
         this._initId = GLib.idle_add(GLib.PRIORITY_DEFAULT_IDLE, () => {
             this._initId = null;
             this._initSlider();
